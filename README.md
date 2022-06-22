@@ -8,6 +8,7 @@ IPsetup is a collection of scripts useful when preparing to connect to ROS robot
    a. export ROS_MASTER_URI=http://"SomeIpAddress":11311
    
    b. export ROS_HOSTNAME="SomeIpAddress
+   
    ("SomeIpAddress" can be your ip or some other ip address)
    
 3. If you found the lines in step 2 replace them with:
