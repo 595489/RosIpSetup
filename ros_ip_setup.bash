@@ -13,11 +13,11 @@ master_uri_new="export ROS_MASTER_URI=http://$ipvar:11311"
 hostname="export ROS_HOSTNAME=HOST_IP"
 hostname_new="export ROS_HOSTNAME=$ipvar"
 
-cp .bashrccopy .bashrc343
+cp ~/.bashrccopy ~/.bashrc343
 
-awk -F: -v s="$master_uri" -v r="$master_uri_new" '$master_uri==s{$master_uri_new=r}7' .bashrc343 > .bashrc234
-awk -F: -v s="$hostname" -v r="$hostname_new" '$hostname==s{$hostname_new=r}7' .bashrc234 > .bashrc
+awk -F: -v s="$master_uri" -v r="$master_uri_new" '$master_uri==s{$master_uri_new=r}7' ~/.bashrc343 > ~/.bashrc234
+awk -F: -v s="$hostname" -v r="$hostname_new" '$hostname==s{$hostname_new=r}7' ~/.bashrc234 > ~/.bashrc
 
-rm .bashrc234 .bashrc343
+rm ~/.bashrc234 ~/.bashrc343
 
 echo $ipvar
