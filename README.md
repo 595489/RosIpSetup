@@ -20,3 +20,14 @@ IPsetup is a collection of scripts useful when preparing to connect to ROS robot
    If not add the lines at the bottom of your .bashrc
    
 4. Run init.bash <./init.bash> in terminal (without <>)
+
+
+**unity_ros_ip_setup.bash**
+
+There is also a file called unity_ros_ip_setup.bash.
+
+This file does the same as the ros_ip_setup.bash file, with the added functionality of also getting the wsl host (windows) ip.
+
+After getting the ips it proceeds to also update the ip field in a specific launch file regarding the ip of the robot.
+
+That last part might not be correct atm, but I have yet to test this while connected to a robot, so if it specifically needs the robot ip you might need to remove that part of the process, and manually set the robot ip

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Author : Isak Aasemoen Aardal
 # License : MIT
@@ -7,6 +7,7 @@
 
 ipvar=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')
 
+# bashrc
 master_uri="export ROS_MASTER_URI=http://HOST_IP:11311"
 master_uri_new="export ROS_MASTER_URI=http://$ipvar:11311"
 
@@ -20,4 +21,5 @@ awk -F: -v s="$hostname" -v r="$hostname_new" '$hostname==s{$hostname_new=r}7' ~
 
 rm ~/.bashrc234 ~/.bashrc343
 
+# Print IP
 echo $ipvar
