@@ -21,6 +21,8 @@ IPsetup is a collection of scripts useful when preparing to connect to ROS robot
    
 4. Run init.bash <./init.bash> in terminal (without <>)
 
+5. Run ros_ip_setup.bash <./ros_ip_setup.bash>
+
 
 **unity_ros_ip_setup.bash**
 
